@@ -1,3 +1,4 @@
+/*头部开始*/
 body {
     width: 100%;
     min-width: 320px;
@@ -8,13 +9,16 @@ body {
     font-family: -apple-system, Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-color: #ccc;
+    height: 2000px;
 }
 
 .searchWrapper {
     height: 44px;
     width: 100%;
-    position: relative;
+    position: fixed;
     overflow: hidden;
+    min-width: 320px;
+    max-width: 640px;
 }
 
 .search-btn {
@@ -54,12 +58,41 @@ body {
     left: 14px;
 }
 
+.search span {
+    position: absolute;
+    top: 3px;
+    left: 40px;
+    color: red;
+}
+
+.search svg {
+    width: 18px;
+    height: 15px;
+    left: 48px;
+    top: 8px;
+    position: absolute;
+    color: red;
+}
+
+.search input {
+    width: 234px;
+    height: 24px;
+    position: absolute;
+    top: 3px;
+    left: 68px;
+    color: #686868;
+    font-size: 14px; 
+    padding-left: 4px;  
+    box-sizing: border-box; 
+    border: 0;
+}
+
 .search-login {
     width: 40px;
     height: 44px;
     position: absolute;
+    left: 374px;
     top: 0;
-    right: 0;
 }
 
 .search-login span {
@@ -67,3 +100,51 @@ body {
     margin: 10px 0;
     color: #fff;
 }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/*头部结束*/
+
+/*主体内容部分开始*/
+
+/*轮播图开始*/
+.slider img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*轮播图结束*/
+
+/*导航栏开始*/
+nav a {
+    width: 20%;
+    display: block;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+}
+
+nav a img {
+    width: 40px;
+}
+
+nav a span {
+    display: block;
+}
+/*导航栏结束*/
+
+.news img{
+    width: 100%;
+}
+
+/*主体内容部分结束*/
+
+  
